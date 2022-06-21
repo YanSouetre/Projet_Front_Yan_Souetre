@@ -34,6 +34,12 @@ body {
     font-size: 17px;
 }
 
+@media (max-width: 1024px) {
+    .topnav #home {
+        display: none;
+    }
+}
+
 .topnav .anav {
     float: left;
     color: #f2f2f2;
@@ -65,9 +71,8 @@ body {
 }
 
 .memory {
-    float: right;
+    text-align: center;
     color: white;
-    margin-right: 3vw;
 }
 
 .neonText {
@@ -152,9 +157,24 @@ body {
 
 #formulairephoto {
     color: white;
-    width: 50vw;
     display: grid;
     justify-content: center;
+    margin-left: 5vw;
+}
+
+@media (max-width: 1024px) {
+    #start-camera {
+        width: 30vw;
+    }
+    #video {
+        width: 30vw;
+    }
+    #click-photo {
+        width: 30vw;
+    }
+    #canvas {
+        width: 30vw;
+    }
 }
 
 #partage {
@@ -173,6 +193,12 @@ body {
     border: solid white;
     border-radius: 5px;
     box-shadow: inset 0px 0px 8px 3px #0ff, 0px 0px 8px 3px #0ff;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 80vw;
+    }
 }
 
 .card:hover .card__caption {

@@ -34,6 +34,12 @@ body {
     font-size: 17px;
 }
 
+@media (max-width: 1024px) {
+    .topnav #home {
+        display: none;
+    }
+}
+
 .topnav .anav {
     float: left;
     color: #f2f2f2;
@@ -99,6 +105,12 @@ body {
     border: solid white;
     border-radius: 5px;
     box-shadow: inset 0px 0px 8px 3px #0ff, 0px 0px 8px 3px #0ff;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 80vw;
+    }
 }
 
 .card:hover .card__caption {
