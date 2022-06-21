@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="partager.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="topnav">
+            <a id="home" class="active" href="index.html">CARS+</a>
+            <a class="anav" href="index.html">Home</a>
+            <a class="anav" href="voitures.html">Les voitures</a>
+            <a class="anav" href="partager.html">Partager</a>
+            <p class="memory"> Mémoire de l'appareil ~<b id="result">unknown</b> GiB</p>
+        </div>
+        <div id="titre">
+            <div id="space"></div>
+        </div>
+        <div id="error"></div>
+        <div id="formulaire">
+            <div id="formulairedescri">
+                <label for="titre">Titre* :</label>
+                <input id="inpTitre" name="titre" placeholder="Titre" type="text"></br>
+                <label for="marque">Marque* :</label>
+                <input id="inpMarque" name="marque" placeholder="Marque" type="text"></br>
+                <label for="date">Date* :</label>
+                <input id="inpDate" name="date" placeholder="Date" type="number"></br>
+                <label for="puissance">Puissance* :</label>
+                <input id="inpPuissance" name="puissance" placeholder="Puissance en ch" type="number"></br>
+                <label for="description">Description :</label>
+                <textarea id="inpDescri" name="description" id="" cols="30" rows="10"></textarea></br>
+                <p>(*): Champs obligatoires</p>
+            </div>
+
+            <div id="formulairephoto">
+                <button id="start-camera">Start Camera</button>
+                <video id="video" width="320" height="240" autoplay></video>
+                <button id="click-photo">Click Photo</button>
+                <canvas id="canvas" width="320" height="240"></canvas>
+                <div class="wrapper1">
+                    <a onclick="partager()" style="border: solid white; color: white;"><span>Partager</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="titre">
+        <h1 class="neonText">Mes Partages</h1>
+    </div>
+    <div id="partage"></div>
+</body>
+
+</html>
